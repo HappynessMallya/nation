@@ -19,9 +19,36 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <body>
+        <div class=" bg-blue-100 min-h-screen flex items-center justify-center">
+           <div class="grid grid-cols-1 shadow-md font-semibol text-lg gap-x-2 md:grid-cols-3 lg:grid-cols-3  gap-4">
+                <div class="bg-white p-3 rounded row-span-3">
+                    <h1>
+                        Happyness
+                    </h1>
+                    <p>
+                        First-Name
+                   </p>
+                  
+                </div>
+                <div class="bg-white p-3 rounded">Christopher</div>
+                <div class="bg-white p-3 rounded">Andrea</div>
+                <div class="bg-white p-3 rounded">Kombo</div>
+                <div class="bg-white p-3 rounded">Kombo</div>
+                <div class="bg-white p-3 rounded">Mallya</div>
+           </div>
+        </div>
+        <div class=" flex flex-row-reverse h-full">
+            <div class=" bg-yellow-300 flex-auto">Happy-flex-1</div>
+            <div class=" bg-gray-300 flex-auto">Happy-flex-2</div>
+            <div class=" bg-pink-50 flex-auto">Happy-flex-3</div>
+        </div>
+
+        <script>{{ mix('js/app.js') }}</script>
+    {{-- <body class="antialiased"> --}}
+        {{-- <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -127,6 +154,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </body>
 </html>

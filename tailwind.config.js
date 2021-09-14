@@ -11,6 +11,9 @@ module.exports = {
 
     theme: {
         extend: {
+            color: {
+                pinkWhite: " #fceee5",
+            },
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
